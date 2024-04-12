@@ -1,6 +1,6 @@
 // src/models/Conta.ts
 
-abstract class Conta {
+export abstract class Conta {
     protected _numero: string;
     protected _saldo: number;
 

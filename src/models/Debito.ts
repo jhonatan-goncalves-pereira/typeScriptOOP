@@ -1,6 +1,6 @@
 import Conta from "./Conta";
 
-class Debito extends Conta {
+export class Debito extends Conta {
     private _valor: number;
     private _data: Date;
 
@@ -26,4 +26,3 @@ class Debito extends Conta {
         this._data = value;
     }
 }
-export default Debito;

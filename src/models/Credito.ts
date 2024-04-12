@@ -1,6 +1,6 @@
-import Conta from "./Conta";
+import {Conta} from "./Conta";
 
-class Credito extends Conta{
+export class Credito extends Conta{
     private _valor:number; 
     private _data :Date; 
 

@@ -1,6 +1,6 @@
 // Importando as classes necessárias
-import Cliente from './src/models/Cliente';
-import ContaCorrente from './src/models/ContaCorrente';
+import {Cliente} from './src/models/Cliente';
+import {ContaCorrente} from './src/models/ContaCorrente';
 
 // Criando um cliente com uma ContaCorrente
 const cliente1 = new Cliente('12345678900', 'Fulano', '123456789', false);

@@ -1,8 +1,8 @@
-import Pessoa from './Pessoa';
-import Endereco from './Endereco';
-import Conta from './Conta';
+import {Pessoa} from './Pessoa';
+import {Endereco} from './Endereco';
+import {Conta} from './Conta';
 
-class Cliente extends Pessoa {
+export class Cliente extends Pessoa {
     private _vip: boolean;
     private _enderecos: Endereco[];
     private _contas: Conta [];
@@ -37,5 +37,3 @@ class Cliente extends Pessoa {
         });
     }
 }
-
-export default Cliente;

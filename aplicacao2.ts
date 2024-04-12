@@ -1,5 +1,5 @@
-import Cliente from "./src/models/Cliente";
-import Endereco from "./src/models/Endereco";
+import {Cliente} from "./src/models/Cliente";
+import {Endereco} from "./src/models/Endereco";
 
 const cliente = new Cliente('12345678900', 'Cliente Teste', '123456789', false);
 

@@ -1,4 +1,4 @@
-class Endereco {
+export class Endereco {
     private _cep: string;
     private _logradouro: string;
     private _numero: string;
@@ -63,5 +63,3 @@ class Endereco {
         this._uf = value;
     }
 }
-
-export default Endereco;

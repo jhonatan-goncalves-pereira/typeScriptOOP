@@ -1,8 +1,8 @@
-import Conta from "./Conta";
-import Debito from "./Debito";
-import IUsuario from "./IUsuario";
+import {Conta} from "./Conta";
+import {Debito} from "./Debito";
+import {IUsuario} from "./IUsuario";
 
-class ContaCorrente extends Conta {
+export class ContaCorrente extends Conta {
     private _limite: number;
 
     constructor(numero: string, limite: number) {
@@ -37,6 +37,3 @@ class ContaCorrente extends Conta {
     }
 }
     
-
-
-export default ContaCorrente;

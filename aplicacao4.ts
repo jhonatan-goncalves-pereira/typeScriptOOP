@@ -1,6 +1,6 @@
-import Cliente from './src/models/Cliente';
-import ContaCorrente from './src/models/ContaCorrente';
-import ContaPoupanca from './src/models/ContaPoupanca';
+import {Cliente} from './src/models/Cliente';
+import {ContaCorrente} from './src/models/ContaCorrente';
+import {ContaPoupanca} from './src/models/ContaPoupanca';
 
 // Criando um cliente com uma ContaCorrente
 const clienteContaCorrente = new Cliente('12345678900', 'Fulano', '123456789', false);

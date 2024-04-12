@@ -1,5 +1,5 @@
-import Cliente from './src/models/Cliente';
-import ContaCorrente from './src/models/ContaCorrente';
+import {Cliente} from './src/models/Cliente';
+import {ContaCorrente} from './src/models/ContaCorrente';
 
 
 const cliente = new Cliente('12345678900', 'Cliente Teste', '123456789', true);

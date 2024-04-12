@@ -1,6 +1,6 @@
-import Conta from "./Conta";
+import {Conta} from "./Conta";
 
-class ContaPoupanca extends Conta {
+export class ContaPoupanca extends Conta {
     
     constructor(numero: string) {
         super(numero);
@@ -23,5 +23,3 @@ class ContaPoupanca extends Conta {
     }
 
 }
-
-export default ContaPoupanca;
