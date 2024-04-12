@@ -1,8 +1,8 @@
 // src/models/Conta.ts
 
 abstract class Conta {
-    private _numero: string;
-    private _saldo: number;
+    protected _numero: string;
+    protected _saldo: number;
 
     constructor(_numero: string) {
         this._numero = _numero;

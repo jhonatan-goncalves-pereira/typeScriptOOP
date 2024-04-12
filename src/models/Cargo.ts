@@ -1,4 +1,4 @@
-class Cargo {
+export class Cargo {
     private _nome: string;
 
     constructor(nome: string) {

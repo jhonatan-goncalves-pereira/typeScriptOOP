@@ -2,30 +2,41 @@ import Conta from "./Conta";
 import Debito from "./Debito";
 import IUsuario from "./IUsuario";
 
-class ContaCorrente extends Debito implements IUsuario {
+class ContaCorrente extends Conta {
     private _limite: number;
-   
-    constructor(_numero: string, limite: number) {
-        super(_numero, 0, new Date()); //  dá pra definir o valor e a data como padrão para 0 e a data atual, respectivamente
+
+    constructor(numero: string, limite: number) {
+        super(numero);
         this._limite = limite;
     }
 
-    get limite(): number {
-        return this._limite;
+    depositar(valor: number): void {
+        this._saldo += valor;
     }
 
-    set limite(value: number) {
-        this._limite = value;
+    sacar(valor: number): void {
+        if (this._saldo - valor >= -this._limite) {
+            this._saldo -= valor;
+        } else {
+            console.log("Saldo insuficiente.");
+        }
     }
 
-    transferir(contaDestino: Conta, valor: number) {
-        // Implementação aqui
+    transferir(contaDestino: Conta, valor: number): void {
+        if (this.saldo >= valor) {
+            this.sacar(valor);
+            contaDestino.depositar(valor);
+            console.log("Transferência realizada com sucesso.");
+        } else {
+            console.log("Saldo insuficiente para transferência.");
+        }
     }
 
-    autenticar(): boolean {
-        // Implementação do método autenticar
-        return true;
+    calcularSaldo(): number {
+        return this._saldo - this._limite;
     }
 }
+    
+
 
 export default ContaCorrente;

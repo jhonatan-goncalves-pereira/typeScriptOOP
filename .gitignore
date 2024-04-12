@@ -16,3 +16,5 @@ node_modules/
 
 # Ignorar arquivos de dependências de testes
 coverage/
+
+*.js

@@ -2,10 +2,22 @@ import Conta from "./Conta";
 
 class ContaPoupanca extends Conta {
     
-    calcularSaldo(): number {
-        // Implementação do cálculo do saldo para conta poupança
-        return this.saldo; // Supondo que o saldo seja um atributo da classe Conta
+    depositar(valor: number): void {
+        this._saldo += valor;
     }
+
+    sacar(valor: number): void {
+        if (this._saldo >= valor) {
+            this._saldo -= valor;
+        } else {
+            console.log("Saldo insuficiente.");
+        }
+    }
+
+    calcularSaldo(): number {
+        return this._saldo;
+    }
+
 }
 
 export default ContaPoupanca;

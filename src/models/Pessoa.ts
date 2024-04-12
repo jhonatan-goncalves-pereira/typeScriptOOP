@@ -1,6 +1,6 @@
 // src/models/Pessoa.ts
 
-abstract class Pessoa {
+export  abstract class Pessoa {
     private _cpf: string;
     private _nome: string;
     private _telefone: string;
