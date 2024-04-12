@@ -2,6 +2,10 @@ import Conta from "./Conta";
 
 class ContaPoupanca extends Conta {
     
+    constructor(numero: string) {
+        super(numero);
+    }
+
     depositar(valor: number): void {
         this._saldo += valor;
     }
