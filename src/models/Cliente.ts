@@ -1,4 +1,5 @@
 import Pessoa from './Pessoa';
+import Endereco from './Endereco';
 
 class Cliente extends Pessoa {
     private _vip: boolean;

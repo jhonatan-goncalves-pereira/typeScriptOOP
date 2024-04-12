@@ -63,3 +63,5 @@ class Endereco {
         this._uf = value;
     }
 }
+
+export default Endereco;
