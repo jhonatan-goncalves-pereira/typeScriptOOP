@@ -1,8 +1,9 @@
-import {Pessoa} from './Pessoa';
-import {Cargo} from './Cargo';
+import Pessoa from './Pessoa';
+import Cargo from './Cargo';
+import Endereco from './Endereco';
 
 
-export class Funcionario extends Pessoa {
+class Funcionario extends Pessoa {
     private _salario: number;
     private _cargo: Cargo;
 
@@ -32,3 +33,5 @@ export class Funcionario extends Pessoa {
         // Implementação aqui
     }
 }
+
+export default Funcionario;

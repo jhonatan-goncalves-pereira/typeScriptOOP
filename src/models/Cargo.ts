@@ -1,4 +1,4 @@
-export class Cargo {
+class Cargo {
     private _nome: string;
 
     constructor(nome: string) {
@@ -13,3 +13,5 @@ export class Cargo {
         this._nome = novoNome;
     }
 }
+
+export default Cargo;

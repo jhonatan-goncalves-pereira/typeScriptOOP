@@ -26,7 +26,7 @@ class Cliente extends Pessoa {
     listarEnderecos(): void {
         console.log("Endereços do cliente:");
         this._enderecos.forEach(endereco => {
-            console.log(`CEP: ${endereco.cep}, Logradouro: ${endereco.logradouro}, Número: ${endereco.numero}`);
+            console.log(`CEP: ${endereco.cep}, Logradouro: ${endereco.logradouro}, Número: ${endereco.numero}, Cidade: ${endereco.cidade}`);
         });
     }
 }
