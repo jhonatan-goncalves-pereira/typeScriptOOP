@@ -1,14 +1,15 @@
 import {Cliente} from './src/models/Cliente';
 import {ContaCorrente} from './src/models/ContaCorrente';
+import { Endereco } from './src/models/Endereco';
 
+const endereco1 = new Endereco('CEP1', 'Rua A', '123', 'Complemento 1', 'Juazeiro do Norte', 'CE');
 
-const cliente = new Cliente('12345678900', 'Cliente Teste', '123456789', true);
+const cliente = new Cliente('12345678900', 'Cliente Teste', '123456789', true, [endereco1]);
 
 
 const contaCorrente = new ContaCorrente('123456', 0);
 
 for (let i = 0; i < 3; i++) {
-    //procedimento
     contaCorrente.depositar(100);
 }
 
