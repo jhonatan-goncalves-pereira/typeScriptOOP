@@ -4,13 +4,13 @@ import {Conta} from './Conta';
 
 export class Cliente extends Pessoa {
     private _vip: boolean;
-    private _enderecos: Endereco[];
+    private _enderecos: Endereco[] = [];
     private _contas: Conta [];
 
-    constructor(cpf: string, nome: string, telefone: string, vip: boolean) {
+    constructor(cpf: string, nome: string, telefone: string, vip: boolean, enderecos: Endereco []) {
         super(cpf, nome, telefone);
         this._vip = vip;
-        this._enderecos = [];
+        this._enderecos = enderecos;
         this._contas = [];
     }
 
